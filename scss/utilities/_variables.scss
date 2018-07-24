@@ -3,8 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:700');
 
 // ---------------- Colors ------------------- //
+// Font colors
 $text-color-light: #fff;
-$text-color-dark: #000;
+$text-color-dark: #818181;
+
 // Theme color set
 $theme-colors: (
   default: #75dbf8,
@@ -15,8 +17,12 @@ $theme-colors: (
   primary: #7cddc2,
 );
 
-// Typography
+// ------------------ Typography ----------------- //
+// Fonts
 $font-primary: 'Lato';
+
+// Sizes
+$p-text: 1.125rem;
 
 // Media queries
 $mq-bg: 769px;
