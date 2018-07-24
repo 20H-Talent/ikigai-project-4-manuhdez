@@ -1,4 +1,10 @@
+// ------------- Imported assets -------------- //
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:700');
+
 // ---------------- Colors ------------------- //
+$text-color-light: #fff;
+$text-color-dark: #000;
 // Theme color set
 $theme-colors: (
   default: #75dbf8,
@@ -10,8 +16,7 @@ $theme-colors: (
 );
 
 // Typography
-$text-color-light: #fff;
-$text-color-dark: #000;
+$font-primary: 'Lato';
 
 // Media queries
 $mq-bg: 769px;
