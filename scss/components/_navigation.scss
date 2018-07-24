@@ -1,0 +1,13 @@
+nav[role="navigation"] {
+  @include flexy($just: center);
+}
+
+.nav {
+  @include flexy($dir: column);
+  width: 100%;
+}
+
+.nav__item {
+  @include flexy($ali: center, $just: center);
+  @extend %button;
+}
