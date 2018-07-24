@@ -1,8 +1,13 @@
-// Colors
-$color-default: #75dbf8;
-$color-success: #7dc889;
-$color-error: #d77b7d;
-$color-warning: #ef7f5f;
-$color-info: #8e7ebc;
+// ---------------- Colors ------------------- //
+// Theme color set
+$theme-colors: (
+  default: #75dbf8,
+  success: #7dc889,
+  error:   #d77b7d,
+  warning: #ef7f5f,
+  info:    #8e7ebc,
+);
 
 // Typography
+$text-color-light: #fff;
+$text-color-dark: #000;

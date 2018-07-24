@@ -1,7 +1,41 @@
+.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1rem; }
+
 *,
 html {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+.btn--default {
+  background-color: #75dbf8; }
+.btn--success {
+  background-color: #7dc889; }
+.btn--error {
+  background-color: #d77b7d; }
+.btn--warning {
+  background-color: #ef7f5f; }
+.btn--info {
+  background-color: #8e7ebc; }
+
+.grid__row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5%;
+  width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */

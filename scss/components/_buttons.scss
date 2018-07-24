@@ -1,0 +1,17 @@
+.btn {
+  &--default {
+    @include buttonize('default');
+  }
+  &--success {
+    @include buttonize('success');
+  }
+  &--error {
+    @include buttonize('error');
+  }
+  &--warning {
+    @include buttonize('warning');
+  }
+  &--info {
+    @include buttonize('info');
+  }
+}
