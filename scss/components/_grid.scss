@@ -5,9 +5,13 @@
     @include flexy();
   }
 }
-@media (max-width: $mq-bg) {
-  div[class^="grid__col"] {
-    width: 100%;
+
+div[class^="grid__col"] {
+  display: flex;
+  @media (max-width: $mq-bg) {
+    & {
+      width: 100%;
+    }
   }
 }
 

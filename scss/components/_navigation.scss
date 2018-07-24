@@ -1,5 +1,7 @@
 nav[role="navigation"] {
   @include flexy($just: center);
+  width: 100%;
+  margin-top: 35px;
 }
 
 .nav {
@@ -8,6 +10,31 @@ nav[role="navigation"] {
 }
 
 .nav__item {
-  @include flexy($ali: center, $just: center);
+  // @include flexy($ali: center, $just: center);
   @extend %button;
+  text-transform: none;
+  font-weight: normal;
+  margin: 0;
+  &:hover {
+    background-color: map-get($theme-colors, 'primary');
+    a {
+      color: $text-color-light;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: lighten($text-color-dark, 20%);
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+.container .grid__row .grid__col--3 a.link {
+  margin: auto;
+}
+
+.img--logo {
+  justify-self: center;
 }

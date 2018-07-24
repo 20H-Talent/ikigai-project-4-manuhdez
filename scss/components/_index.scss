@@ -1,5 +1,5 @@
 .container {
   @include flexy($dir: column, $just: center);
-  padding: 5%;
+  padding: 45px 5%;
   width: 100%;
 }
