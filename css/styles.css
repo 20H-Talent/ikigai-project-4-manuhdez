@@ -84,12 +84,6 @@ div[class^="grid__col"] {
 .card {
   margin: 52px 0; }
 
-p {
-  font-size: 1.125rem;
-  line-height: 1.7;
-  color: #818181;
-  font-weight: lighter; }
-
 nav[role="navigation"] {
   display: flex;
   flex-direction: row;
@@ -127,5 +121,24 @@ nav[role="navigation"] {
 
 .img--logo {
   justify-self: center; }
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #818181;
+  font-weight: lighter; }
+
+.headline--secondary {
+  color: #818181;
+  font-size: 1rem;
+  margin-left: 5px;
+  margin-bottom: 30px; }
+
+.headline--primary {
+  color: #7cddc2;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  width: 80%; }
 
 /*# sourceMappingURL=styles.css.map */

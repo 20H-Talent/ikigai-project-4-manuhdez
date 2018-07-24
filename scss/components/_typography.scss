@@ -1,0 +1,21 @@
+p {
+  font-size: $p-text;
+  line-height: 1.7;
+  color: $text-color-dark;
+  font-weight: lighter;
+}
+
+.headline--secondary {
+  color: $text-color-dark;
+  font-size: $head-secondary;
+  margin-left: 5px;
+  margin-bottom: 30px;
+}
+
+.headline--primary {
+  color: map-get($theme-colors, primary);
+  font-weight: bold;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  width: 80%;
+}
