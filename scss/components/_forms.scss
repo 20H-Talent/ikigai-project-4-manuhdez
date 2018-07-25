@@ -28,4 +28,7 @@ form img {
 .form button[type="submit"] {
   margin-top: 15px;
   margin-bottom: 40px;
+  @media (min-width: $mq-bg) {
+    width: 100%;
+  }
 }
