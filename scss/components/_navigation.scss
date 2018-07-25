@@ -2,15 +2,22 @@ nav[role="navigation"] {
   @include flexy($just: center);
   width: 100%;
   margin-top: 35px;
+  @media (min-width: $mq-bg) {
+    margin: 0;
+  }
 }
 
 .nav {
   @include flexy($dir: column);
   width: 100%;
+  @media (min-width: $mq-bg) {
+    @include flexy($dir: row, $just: flex-end);
+  }
 }
 
 .nav__item {
   // @include flexy($ali: center, $just: center);
+  list-style: none;
   @extend %button;
   text-transform: none;
   font-weight: normal;
@@ -28,6 +35,9 @@ nav[role="navigation"] {
     width: 100%;
     height: 100%;
     text-align: center;
+  }
+  @media (min-width: $mq-bg) {
+    max-width: 15%;
   }
 }
 
