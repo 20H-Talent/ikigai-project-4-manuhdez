@@ -201,6 +201,9 @@ div[class^="grid__col"] {
 
 .card {
   margin: 52px 0; }
+  @media (min-width: 769px) {
+    .card {
+      margin: 35px 20px; } }
 
 nav[role="navigation"] {
   display: flex;

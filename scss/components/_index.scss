@@ -6,4 +6,7 @@
 
 .card {
   margin: 52px 0;
+  @media (min-width: $mq-bg) {
+    margin: 35px 20px;
+  }
 }
