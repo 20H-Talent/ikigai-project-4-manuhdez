@@ -33,6 +33,34 @@ html {
 .btn--info {
   background-color: #8e7ebc; }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%; }
+
+form img {
+  margin: 0 auto 25px auto; }
+
+.form__label--hidden {
+  visibility: hidden; }
+
+.form__input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 5px solid #7cddc2;
+  padding: 0 15px;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  font-weight: 600; }
+
+.form button[type="submit"] {
+  margin-top: 15px;
+  margin-bottom: 40px; }
+
 .grid__row {
   width: 100%;
   display: flex;
