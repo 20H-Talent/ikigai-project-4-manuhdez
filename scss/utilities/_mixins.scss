@@ -11,3 +11,8 @@
   align-items: $ali;
   flex-wrap: $wrap;
 }
+
+@mixin frame($pad: 0, $bd: 1px solid darkgrey) {
+  padding: $pad;
+  border: $bd;
+}

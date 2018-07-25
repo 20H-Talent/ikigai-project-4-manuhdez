@@ -110,6 +110,15 @@ div[class^="grid__col"] {
   .grid__col--12 {
     width: 100%; } }
 
+.img--frame {
+  padding: 12px;
+  border: 1px solid darkgrey;
+  width: 100%;
+  margin: 30px auto; }
+
+.img--avatar {
+  margin: 15px auto 45px auto; }
+
 .container {
   display: flex;
   flex-direction: column;
