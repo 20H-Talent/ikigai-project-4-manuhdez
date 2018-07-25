@@ -4,9 +4,10 @@
   @extend %button;
 }
 
-@mixin flexy($dis: flex, $dir: row, $just: flex-start, $ali: flex-start) {
+@mixin flexy($dis: flex, $dir: row, $just: flex-start, $ali: flex-start, $wrap: nowrap) {
   display: flex;
   flex-direction: $dir;
   justify-content: $just;
   align-items: $ali;
+  flex-wrap: $wrap;
 }

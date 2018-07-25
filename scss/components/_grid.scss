@@ -8,6 +8,7 @@
 
 div[class^="grid__col"] {
   display: flex;
+  flex-wrap: wrap;
   @media (max-width: $mq-bg) {
     & {
       width: 100%;

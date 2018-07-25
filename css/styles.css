@@ -9,8 +9,11 @@
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 600;
-  margin: 12px;
+  margin: 1%;
   cursor: pointer; }
+  @media (min-width: 769px) {
+    .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info, .nav__item {
+      width: calc(90% / 5); } }
 
 *,
 html {
@@ -35,16 +38,19 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start; }
+  align-items: flex-start;
+  flex-wrap: nowrap; }
   @media (min-width: 769px) {
     .grid__row {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
-      align-items: flex-start; } }
+      align-items: flex-start;
+      flex-wrap: nowrap; } }
 
 div[class^="grid__col"] {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
   @media (max-width: 769px) {
     div[class^="grid__col"] {
       width: 100%; } }
@@ -78,6 +84,7 @@ div[class^="grid__col"] {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  flex-wrap: nowrap;
   padding: 45px 10%;
   width: 100%; }
 
@@ -89,6 +96,7 @@ nav[role="navigation"] {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
+  flex-wrap: nowrap;
   width: 100%;
   margin-top: 35px;
   margin-bottom: 52px; }
@@ -98,6 +106,7 @@ nav[role="navigation"] {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-wrap: nowrap;
   width: 100%; }
 
 .nav__item {
