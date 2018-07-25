@@ -1,6 +1,9 @@
 .form {
   @include flexy($dir: column);
   width: 100%;
+  @media (min-width: $mq-bg) {
+    margin: 35px 20px;
+  }
 }
 
 form img {

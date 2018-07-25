@@ -40,6 +40,9 @@ html {
   align-items: flex-start;
   flex-wrap: nowrap;
   width: 100%; }
+  @media (min-width: 769px) {
+    .form {
+      margin: 35px 20px; } }
 
 form img {
   margin: 0 auto 25px auto; }
