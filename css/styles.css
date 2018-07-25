@@ -74,7 +74,7 @@ form img {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
-      align-items: flex-start;
+      align-items: center;
       flex-wrap: nowrap; } }
 
 div[class^="grid__col"] {
@@ -86,6 +86,13 @@ div[class^="grid__col"] {
   @media (max-width: 769px) {
     div[class^="grid__col"] {
       width: 100%; } }
+  @media (min-width: 769px) {
+    div[class^="grid__col"] {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: nowrap; } }
 
 .grid__col--3.theme__colors {
   padding: 15px 10px;
@@ -93,42 +100,63 @@ div[class^="grid__col"] {
   border-radius: 5px;
   color: #818181;
   background-color: #d7b5ea; }
+  @media (min-width: 769px) {
+    .grid__col--3.theme__colors {
+      margin: 0 8px; } }
 .grid__col--4.theme__colors {
   padding: 15px 10px;
   margin: 3px 0;
   border-radius: 5px;
   color: #818181;
   background-color: #94e4fa; }
+  @media (min-width: 769px) {
+    .grid__col--4.theme__colors {
+      margin: 0 8px; } }
 .grid__col--5.theme__colors {
   padding: 15px 10px;
   margin: 3px 0;
   border-radius: 5px;
   color: #818181;
   background-color: #99d6a5; }
+  @media (min-width: 769px) {
+    .grid__col--5.theme__colors {
+      margin: 0 8px; } }
 .grid__col--6.theme__colors {
   padding: 15px 10px;
   margin: 3px 0;
   border-radius: 5px;
   color: #818181;
   background-color: #5aa9c7; }
+  @media (min-width: 769px) {
+    .grid__col--6.theme__colors {
+      margin: 0 8px; } }
 .grid__col--7.theme__colors {
   padding: 15px 10px;
   margin: 3px 0;
   border-radius: 5px;
   color: #818181;
   background-color: #e2a2a4; }
+  @media (min-width: 769px) {
+    .grid__col--7.theme__colors {
+      margin: 0 8px; } }
 .grid__col--8.theme__colors {
   padding: 15px 10px;
   margin: 3px 0;
   border-radius: 5px;
   color: #818181;
   background-color: #f2a38a; }
+  @media (min-width: 769px) {
+    .grid__col--8.theme__colors {
+      margin: 0 8px; } }
 .grid__col--12.theme__colors {
   padding: 15px 10px;
   margin: 3px 0;
   border-radius: 5px;
   color: #818181;
   background-color: #97e5d2; }
+  @media (min-width: 769px) {
+    .grid__col--12.theme__colors {
+      margin: 0 8px; } }
 @media (min-width: 769px) {
   .grid__col--2 {
     width: 16.6666666667%; }

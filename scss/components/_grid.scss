@@ -3,7 +3,7 @@
   margin: 35px 0;
   @include flexy($dir: column);
   @media (min-width: 769px) {
-    @include flexy();
+    @include flexy($ali: center);
   }
 }
 
@@ -13,6 +13,9 @@ div[class^="grid__col"] {
     & {
       width: 100%;
     }
+  }
+  @media (min-width: $mq-bg) {
+    @include flexy($wrap: nowrap, $just: space-between);
   }
 }
 

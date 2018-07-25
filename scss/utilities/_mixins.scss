@@ -28,4 +28,7 @@
   border-radius: 5px;
   color: $text-color-dark;
   background-color: map-get($theme-colors , $color);
+  @media (min-width: $mq-bg) {
+    margin: 0 8px;
+  }
 }
