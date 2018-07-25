@@ -3,10 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:700');
 
 // ---------------- Colors ------------------- //
-// Font colors
-$text-color-light: #fff;
-$text-color-dark: #818181;
-
 // Theme color set
 $theme-colors: (
   default: #75dbf8,
@@ -19,11 +15,17 @@ $theme-colors: (
 
 // ------------------ Typography ----------------- //
 // Fonts
-$font-primary: 'Lato';
+$font-primary: 'Helvetica Neue';
 
 // Sizes
 $p-text: 1.125rem;
-$head-secondary: 1rem;
+$head-secondary: 1.125rem;
+$blockquote: 1.75rem;
+
+// Font colors
+$text-color-light: #fff;
+$text-color-dark: #818181;
+$text-color-link: map-get($theme-colors, default);
 
 // Media queries
 $mq-bg: 769px;
