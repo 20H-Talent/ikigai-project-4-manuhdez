@@ -1,5 +1,6 @@
 .grid__row {
   width: 100%;
+  margin: 35px 0;
   @include flexy($dir: column);
   @media (min-width: 769px) {
     @include flexy();
@@ -16,6 +17,28 @@ div[class^="grid__col"] {
 }
 
 .grid__col {
+  &--3.theme__colors {
+    @include gridify(col3);
+  }
+  &--4.theme__colors {
+    @include gridify(col4);
+  }
+  &--5.theme__colors {
+    @include gridify(col5);
+  }
+  &--6.theme__colors {
+    @include gridify(col6);
+  }
+  &--7.theme__colors {
+    @include gridify(col7);
+  }
+  &--8.theme__colors {
+    @include gridify(col8);
+  }
+  &--12.theme__colors {
+    @include gridify(col12);
+  }
+
   @media(min-width: $mq-bg) {
     &--2 {
       width: grid-width(2);

@@ -1,6 +1,11 @@
+@mixin colorize($color-name) {
+  background-color: map-get($theme-colors, $color-name);
+}
+
 @mixin buttonize($color-name) {
-  $color: map-get($theme-colors, $color-name);
-  background-color: $color;
+  // $color: map-get($theme-colors, $color-name);
+  // background-color: $color;
+  @include colorize($color-name);
   @extend %button;
 }
 
@@ -15,4 +20,12 @@
 @mixin frame($pad: 0, $bd: 1px solid darkgrey) {
   padding: $pad;
   border: $bd;
+}
+
+@mixin gridify($color) {
+  padding: 15px 10px;
+  margin: 3px 0;
+  border-radius: 5px;
+  color: $text-color-dark;
+  background-color: map-get($theme-colors , $color);
 }
