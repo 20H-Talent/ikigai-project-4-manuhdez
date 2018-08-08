@@ -83,17 +83,17 @@ form img {
       align-items: center;
       flex-wrap: nowrap; } }
 
-div[class^="grid__col"] {
+div[class^='grid__col'] {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap; }
   @media (max-width: 769px) {
-    div[class^="grid__col"] {
+    div[class^='grid__col'] {
       width: 100%; } }
   @media (min-width: 769px) {
-    div[class^="grid__col"] {
+    div[class^='grid__col'] {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -186,6 +186,9 @@ div[class^="grid__col"] {
     width: 91.6666666667%; }
   .grid__col--12 {
     width: 100%; } }
+
+.centered {
+  margin: 0 auto !important; }
 
 .img--frame {
   padding: 12px;

@@ -1,81 +1,84 @@
 .grid__row {
-  width: 100%;
-  margin: 35px 0;
-  @include flexy($dir: column);
-  @media (min-width: 769px) {
-    @include flexy($ali: center);
-  }
+	width: 100%;
+	margin: 35px 0;
+	@include flexy($dir: column);
+	@media (min-width: 769px) {
+		@include flexy($ali: center);
+	}
 }
 
-div[class^="grid__col"] {
-  @include flexy($wrap: wrap);
-  @media (max-width: $mq-bg) {
-    & {
-      width: 100%;
-    }
-  }
-  @media (min-width: $mq-bg) {
-    @include flexy($wrap: nowrap, $just: space-between);
-  }
+div[class^='grid__col'] {
+	@include flexy($wrap: wrap);
+	@media (max-width: $mq-bg) {
+		& {
+			width: 100%;
+		}
+	}
+	@media (min-width: $mq-bg) {
+		@include flexy($wrap: nowrap, $just: space-between);
+	}
 }
 
 .grid__col {
-  &--3.theme__colors {
-    @include gridify(col3);
-  }
-  &--4.theme__colors {
-    @include gridify(col4);
-  }
-  &--5.theme__colors {
-    @include gridify(col5);
-  }
-  &--6.theme__colors {
-    @include gridify(col6);
-  }
-  &--7.theme__colors {
-    @include gridify(col7);
-  }
-  &--8.theme__colors {
-    @include gridify(col8);
-  }
-  &--12.theme__colors {
-    @include gridify(col12);
-  }
+	&--3.theme__colors {
+		@include gridify(col3);
+	}
+	&--4.theme__colors {
+		@include gridify(col4);
+	}
+	&--5.theme__colors {
+		@include gridify(col5);
+	}
+	&--6.theme__colors {
+		@include gridify(col6);
+	}
+	&--7.theme__colors {
+		@include gridify(col7);
+	}
+	&--8.theme__colors {
+		@include gridify(col8);
+	}
+	&--12.theme__colors {
+		@include gridify(col12);
+	}
 
-  @media(min-width: $mq-bg) {
-    &--2 {
-      width: grid-width(2);
-    }
-    &--3 {
-      width: grid-width(3);
-    }
-    &--4 {
-      width: grid-width(4);
-    }
-    &--5 {
-      width: grid-width(5);
-    }
-    &--6 {
-      width: grid-width(6);
-    }
-    &--7 {
-      width: grid-width(7);
-    }
-    &--8 {
-      width: grid-width(8);
-    }
-    &--9 {
-      width: grid-width(9);
-    }
-    &--10 {
-      width: grid-width(10);
-    }
-    &--11 {
-      width: grid-width(11);
-    }
-    &--12 {
-      width: grid-width(12);
-    }
-  }
+	@media (min-width: $mq-bg) {
+		&--2 {
+			width: grid-width(2);
+		}
+		&--3 {
+			width: grid-width(3);
+		}
+		&--4 {
+			width: grid-width(4);
+		}
+		&--5 {
+			width: grid-width(5);
+		}
+		&--6 {
+			width: grid-width(6);
+		}
+		&--7 {
+			width: grid-width(7);
+		}
+		&--8 {
+			width: grid-width(8);
+		}
+		&--9 {
+			width: grid-width(9);
+		}
+		&--10 {
+			width: grid-width(10);
+		}
+		&--11 {
+			width: grid-width(11);
+		}
+		&--12 {
+			width: grid-width(12);
+		}
+	}
+}
 
+.centered {
+	margin: 0 auto !important;
 }

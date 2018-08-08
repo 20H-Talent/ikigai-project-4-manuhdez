@@ -1,34 +1,40 @@
 @mixin colorize($color-name) {
-  background-color: map-get($theme-colors, $color-name);
+	background-color: map-get($theme-colors, $color-name);
 }
 
 @mixin buttonize($color-name) {
-  // $color: map-get($theme-colors, $color-name);
-  // background-color: $color;
-  @include colorize($color-name);
-  @extend %button;
+	// $color: map-get($theme-colors, $color-name);
+	// background-color: $color;
+	@include colorize($color-name);
+	@extend %button;
 }
 
-@mixin flexy($dis: flex, $dir: row, $just: flex-start, $ali: flex-start, $wrap: nowrap) {
-  display: flex;
-  flex-direction: $dir;
-  justify-content: $just;
-  align-items: $ali;
-  flex-wrap: $wrap;
+@mixin flexy(
+	$dis: flex,
+	$dir: row,
+	$just: flex-start,
+	$ali: flex-start,
+	$wrap: nowrap
+) {
+	display: flex;
+	flex-direction: $dir;
+	justify-content: $just;
+	align-items: $ali;
+	flex-wrap: $wrap;
 }
 
 @mixin frame($pad: 0, $bd: 1px solid darkgrey) {
-  padding: $pad;
-  border: $bd;
+	padding: $pad;
+	border: $bd;
 }
 
 @mixin gridify($color) {
-  padding: 15px 10px;
-  margin: 3px 0;
-  border-radius: 5px;
-  color: $text-color-dark;
-  background-color: map-get($theme-colors , $color);
-  @media (min-width: $mq-bg) {
-    margin: 0 8px;
-  }
+	padding: 15px 10px;
+	margin: 3px 0;
+	border-radius: 5px;
+	color: $text-color-dark;
+	background-color: map-get($theme-colors, $color);
+	@media (min-width: $mq-bg) {
+		margin: 0 8px;
+	}
 }
