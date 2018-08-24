@@ -1,12 +1,17 @@
-@mixin colorize($color-name) {
-	background-color: map-get($theme-colors, $color-name);
+@mixin colorize($map) {
+	@each $theme, $color in $map {
+		&--#{$theme} {
+			background-color: $color;
+		}
+	}
 }
 
-@mixin buttonize($color-name) {
-	// $color: map-get($theme-colors, $color-name);
-	// background-color: $color;
-	@include colorize($color-name);
-	@extend %button;
+@mixin button($map) {
+	@each $theme, $color in $map {
+		&--#{$theme} {
+			@extend %button;
+		}
+	}
 }
 
 @mixin flexy(
@@ -33,7 +38,7 @@
 	margin: 3px 0;
 	border-radius: 5px;
 	color: $text-color-dark;
-	background-color: map-get($theme-colors, $color);
+	// background-color: map-get($theme-colors, $color);
 	@media (min-width: $mq-bg) {
 		margin: 0 8px;
 	}
