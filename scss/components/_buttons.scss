@@ -1,4 +1,3 @@
 .btn {
 	@include button($theme-colors);
-	@include colorize($theme-colors);
 }
