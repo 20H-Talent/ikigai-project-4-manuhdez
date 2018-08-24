@@ -1,22 +1,13 @@
 // IMPORTED STYLES ------------------------ /
 
 // Utitilies
-@import "utilities/index",
-        "utilities/variables",
-        "utilities/extends",
-        "utilities/mixins",
-        "utilities/functions";
+@import 'utilities/index', 'utilities/variables', 'utilities/functions',
+	'utilities/extends', 'utilities/mixins';
 
 // Base
-@import "base/base",
-        "base/index",
-        "base/normalize";
+@import 'base/base', 'base/index', 'base/normalize';
 
 // Components
-@import "components/buttons",
-        "components/forms",
-        "components/grid",
-        "components/images",
-        "components/index",
-        "components/navigation",
-        "components/typography";
+@import 'components/buttons', 'components/forms', 'components/grid',
+	'components/images', 'components/index', 'components/navigation',
+	'components/typography';
